@@ -1,0 +1,62 @@
+/* Thème hacker */
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Disposition des 3 parties */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/* Style pour les membres (gauche et droite) */
+.member {
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+    filter: drop-shadow(0 0 10px #00ff00);
+    margin-top: 50%;
+}
+
+.member h4 {
+    margin-top: 10px;
+    font-size: 2em;
+    text-shadow: 0 0 8px #00ff00;
+}
+
+/* Partie centrale */
+.center h1 {
+    font-size: 3.5em;
+    text-shadow: 0 0 15px #00ff00, 0 0 30px #008000;
+    margin-bottom: 20px;
+}
+
+.center img {
+    width: 100%;
+    filter: drop-shadow(0 0 15px #00ff00);
+}
+
+.center h2 {
+    margin-top: 20px;
+    font-size: 2em;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+/* Effet "hacker" : texte clignotant */
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+h1, h2, h4 {
+    animation: blink 2s infinite;
+}
